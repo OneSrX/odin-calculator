@@ -13,4 +13,33 @@
 
 body {
   font-family: "Rubik", serif;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hardware {
+  background-color: red;
+  padding: 1rem 0.5rem;
+  /* max-width: 10rem; */
+}
+
+.display {
+  background-color: antiquewhite;
+  font-family: "Orbitron", serif;
+}
+
+.buttons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+}
+
+.buttons-wrapper button {
+  flex: 1 0 calc(25% - 1px);
+}
+
+.buttons-wrapper button.evaluate {
+  flex-basis: calc(50% - 1px);
 }
