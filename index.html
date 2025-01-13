@@ -16,30 +16,46 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="./images/favicon.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <p class="display">100 + 1</p>
+    <div class="hardware">
+      <div>
+        <p class="display"></p>
+      </div>
+      <div class="buttons-wrapper">
+        <button class="clear">AC</button>
+        <button class="sign">+/-</button>
+        <button class="percent">%</button>
+        <button class="operator" data-operand="/">/</button>
 
-    <button class="number">0</button>
-    <button class="number">1</button>
-    <button class="number">2</button>
-    <button class="number">3</button>
-    <button class="number">4</button>
-    <button class="number">5</button>
-    <button class="number">6</button>
-    <button class="number">7</button>
-    <button class="number">8</button>
-    <button class="number">9</button>
+        <button class="number" data-number="7">7</button>
+        <button class="number" data-number="8">8</button>
+        <button class="number" data-number="9">9</button>
+        <button class="operator" data-operand="*">*</button>
 
-    <button class="operator">=</button>
-    <button class="operator">+</button>
-    <button class="operator">-</button>
-    <button class="operator">*</button>
-    <button class="operator">/</button>
+        <button class="number" data-number="4">4</button>
+        <button class="number" data-number="5">5</button>
+        <button class="number" data-number="6">6</button>
+        <button class="operator" data-operand="-">-</button>
 
-    <button class="clear">CLEAR</button>
+        <button class="number" data-number="1">1</button>
+        <button class="number" data-number="2">2</button>
+        <button class="number" data-number="3">3</button>
+        <button class="operator" data-operand="+">+</button>
+
+        <button class="point">.</button>
+        <button class="number" data-number="0">0</button>
+        <button class="operator evaluate" data-eval="=">=</button>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
