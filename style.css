@@ -23,11 +23,15 @@ body {
   background-color: red;
   padding: 1rem 0.5rem;
   /* max-width: 10rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .display {
   background-color: antiquewhite;
-  font-family: "Orbitron", serif;
+  /* font-family: "Orbitron", serif; */
+  height: 2rem;
 }
 
 .buttons-wrapper {
